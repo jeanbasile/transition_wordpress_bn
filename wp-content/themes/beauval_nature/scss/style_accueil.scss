@@ -1,0 +1,184 @@
+@import "normalize";
+@import "typo";
+@import "variables";
+@import "animations";
+@import "toast";
+@import "recyclage";
+@import "header";
+@import "footer";
+@import "presentation_article";
+@import "conservation";
+@import "partenaire";
+@import "contact";
+@import "mentions_legales";
+@import "wordpress_rules";
+
+body {
+    color: $brun;
+}
+
+section:first-of-type {
+    padding: 50px 0;
+}
+// --------------------- textes ----------------------
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: $titre;
+    font-size: 50px;
+    // color: $brun;
+}
+
+.beauval_nature,
+.texte_intro {
+    padding-bottom: 70px;
+    color: $brun;
+}
+
+.intro_beauval_nature {
+    text-align: center;
+    color: $brun;
+
+    .logo_intro_bn {
+        text-align: center;
+
+        img {
+            height: 300px;
+        }
+    }
+}
+
+.texte_intro {
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+@media (max-width:$mobile_size) {
+    section.container.intro_beauval_nature {
+        margin-bottom: 300px;
+    }
+}
+//  ----------------------En savoir plus --------------------------
+
+article {
+    h1 {
+        color: $brun;
+    }
+
+    p {
+        color: $brun;
+    }
+}
+// -------------------------- Gestion Slider ------------------------
+
+span.inner {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 20;
+}
+
+.infos_slider {
+    z-index: 21;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    display: inline-block;
+
+    h2 {
+        // display: inline-block;
+        font-family: $titre;
+        color: white;
+        font-size: 25px;
+    }
+
+    a {
+        color: white;
+        // font-family: "myriad pro";
+        background: $rouge;
+        font-size: 20px;
+        padding: 10px;
+        // margin: 10px;
+        width: 150px;
+
+        &:hover {
+            background-color: white;
+            color: $vert;
+            transition: 0.4s;
+        }
+    }
+}
+// ----------------------------- section nous_soutenir -----------------
+
+.rappel_financement {
+    margin-bottom: 40px;
+}
+@media (max-width: $mobile_size) {
+    .animaux,
+    .intro_beauval_nature,
+    .rappel_don,
+    .rappel_financement,
+    .rappel_recyclage, .association, {
+        div p {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
+
+.intro_beauval_nature,
+.nous_soutenir {
+    color: $brun;
+    font-family: "myriad pro";
+
+    h1:first-of-type {
+        font-size: 60px;
+        // background-color: $brun;
+        // color: white;
+    }
+
+    div a {
+        display: block;
+        text-align: center;
+        background-color: $vert;
+        padding: 10px;
+        width: 150px;
+        margin: 40px auto 0;
+        color: white;
+        text-decoration: none;
+        border: solid 1px $vert;
+
+        &:hover {
+            color: $vert;
+            background: white;
+            transition: 0.4s;
+        }
+    }
+
+    .js-parallax-container {
+        height: 200px;
+
+        h1 {
+            background-color: white;
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            top: 40%;
+            z-index: 30;
+        }
+    }
+}

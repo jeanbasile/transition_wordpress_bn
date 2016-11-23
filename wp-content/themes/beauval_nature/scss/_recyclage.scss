@@ -1,0 +1,21 @@
+.recyclage {
+  p {
+    text-align: justify;
+
+  }
+
+  div:nth-of-type(2) p {
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: $mobile_size) {
+    .recyclage {
+       p {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}

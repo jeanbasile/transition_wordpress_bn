@@ -1,0 +1,103 @@
+h1 {
+    color: $brun;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenu {
+    color: $brun;
+
+    p {
+        margin-top: 0px;
+        text-align: justify;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-family: $titre;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    a {
+        display: block;
+        background-color: $vert;
+        padding: 10px;
+        width: 150px;
+        margin-top: 20px;
+        color: white;
+        border: solid 1px $vert;
+
+        &:hover {
+            color: $vert;
+            background: white;
+            transition: 0.4s;
+        }
+    }
+}
+
+
+
+@media (max-width: $mobile_size) {
+    .contenu {
+        a,
+        p {
+            margin: 40px;
+        }
+
+        img {
+            width: 85%;
+        }
+    }
+}
+
+
+// -------------------------------- Zoom Article ------------------------------------
+
+.lien {
+
+  a {
+    display: block;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+}
+
+.js-parallax-container.article {
+    height: 250px;
+}
+
+.pagination {
+    margin-top: 100px;
+
+    ul {
+        // display: block;
+        margin: 0 auto;
+
+        li {
+            list-style: none;
+            text-align: center;
+        }
+    }
+}
+
+.prev,
+.suiv {
+    background-color: $vert;
+    padding: 15px;
+
+    a {
+        color: white;
+    }
+}
+
+.suiv {
+    right: 0;
+}

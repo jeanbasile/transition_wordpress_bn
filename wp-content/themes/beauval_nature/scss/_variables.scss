@@ -1,0 +1,50 @@
+$brun: #5a5252;
+$brun-clair: #b19c89;
+$rouge: #c54545;
+$vert: #285943;
+$mobile_size: 700px;
+$titre: "Bebas Neue";
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url('../fonts/bebas_neue/BebasNeue Regular.ttf');
+}
+
+
+
+
+@mixin clearfix() {
+    &:after,
+    &:before {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+// ------------------Menus déroulants------------------------
+
+.button-read-less,
+.less.active .button-read-more, .button-conservation-less, .less.active .button-conservation-more {
+    display: none;
+}
+
+.less.active .button-read-less, .less.active .button-conservation-less {
+    display: block;
+}
