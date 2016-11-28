@@ -296,13 +296,13 @@ get_header();
 
         <div class="my-tabs">
             <div class="my-tab">
-                <?php $post  = get_post(85); echo $post->post_content; ?>
+                <?php $post  = get_post(612); echo $post->post_content; ?>
             </div>
             <div class="my-tab">
-                <?php $post  = get_post(87); echo $post->post_content; ?>
+                <?php $post  = get_post(596); echo $post->post_content; ?>
             </div>
             <div class="my-tab">
-                <?php $post  = get_post(104); echo $post->post_content; ?>
+                <?php $post  = get_post(613); echo $post->post_content; ?>
             </div>
         </div>
 
@@ -319,15 +319,15 @@ get_header();
             </ul>
         </div>
         <div class="my-tabs">
-            <?php $post  = get_post(123); ?>
+            <?php $post  = get_post(614); ?>
             <div class="my-tab">
                 <?php echo $post->post_content; ?>
             </div>
-            <?php $post  = get_post(125); ?>
+            <?php $post  = get_post(615); ?>
             <div class="my-tab">
                 <?php echo $post->post_content; ?>
             </div>
-            <?php $post  = get_post(127); ?>
+            <?php $post  = get_post(616); ?>
             <div class="my-tab">
                 <?php echo $post->post_content; ?>
             </div>

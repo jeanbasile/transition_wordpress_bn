@@ -109,3 +109,118 @@ function zpb_action_register_menus() {
 }
 
 add_action( 'after_setup_theme', 'zpb_action_register_menus' );
+
+
+function register_my_post_type() {
+	$labels_01 = array(
+		'name'               => 'Programmes Conservation',
+		'singular_name'      => 'Programme',
+		'menu_name'          => 'Programmes Conservation',
+		'name_admin_bar'     => 'Programmes',
+		'add_new'            => 'Nouveau',
+		'add_new_item'       => 'Nouveau programme',
+		'new_item'           => 'Nouveau programme',
+		'edit_item'          => 'Editer un programme',
+		'view_item'          => 'Voir un programme',
+		'all_items'          => 'Tous les programmes',
+		'search_items'       => 'Chercher un programme',
+		'parent_item_colon'  => 'Programme parent',
+		'not_found'          => 'Aucun programme trouver',
+		'not_found_in_trash' => 'Aucun programme dans la corbeille'
+	);
+
+	$args_01 = array(
+		'labels'             => $labels_01,
+                'description'        => "Programmes de conservation de Beauval Nature",
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'programme' ),
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
+	);
+
+	register_post_type( 'programme', $args_01 );
+        
+        
+        $labels_02 = array(
+		'name'               => 'Partenaires',
+		'singular_name'      => 'Partenaire',
+		'menu_name'          => 'Partenaires',
+		'name_admin_bar'     => 'Partenaire',
+		'add_new'            => 'Nouveau',
+		'add_new_item'       => 'Nouvelle section partenaire',
+		'new_item'           => 'Nouvelle section',
+		'edit_item'          => 'Editer une section partenaire',
+		'view_item'          => 'Voir une section partenaire',
+		'all_items'          => 'Toutes les sections partenaires',
+		'search_items'       => 'Chercher une section partenaire',
+		'parent_item_colon'  => 'Partenaire parent',
+		'not_found'          => 'Aucune section partenaire trouver',
+		'not_found_in_trash' => 'Aucune section partenaire dans la corbeille'
+	);
+
+	$args_02 = array(
+		'labels'             => $labels_02,
+                'description'        => "Les partenaires de Beauval Nature",
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'partenaire' ),
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
+	);
+
+	register_post_type( 'partenaire', $args_02 );
+        
+        
+        
+        $labels_03 = array(
+		'name'               => 'Articles Page d\'Accueil',
+		'singular_name'      => 'Article Page d\'Accueil',
+		'menu_name'          => 'Articles Page d\'Accueil',
+		'name_admin_bar'     => 'Accueil',
+		'add_new'            => 'Nouveau',
+		'add_new_item'       => 'Nouvel article de la page d\'accueil',
+		'new_item'           => 'Nouvel article de la page d\'accueil',
+		'edit_item'          => 'Editer un article de la page d\'accueil',
+		'view_item'          => 'Voir un article de la page d\'accueil',
+		'all_items'          => 'Tous les articles de la page d\'acceuil',
+		'search_items'       => 'Chercher un article',
+		'parent_item_colon'  => 'Programme parent',
+		'not_found'          => 'Aucun article trouver',
+		'not_found_in_trash' => 'Aucun article trouver dans la corbeille'
+	);
+
+	$args_03 = array(
+		'labels'             => $labels_03,
+                'description'        => "Les articles qui figurent en page d'acceuil",
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'recyclage' ),
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
+	);
+
+	register_post_type( 'Articles Page d\'Accueil', $args_03 );
+        
+        
+}
+
+add_action( 'init', 'register_my_post_type' );

@@ -40,7 +40,7 @@ get_header();
     <section>
         <div class="row">
             <div class="texte_intro">
-                <?php $post  = get_post(156); ?>
+                <?php $post  = get_post(609); ?>
                 <div class="col col--6-of-12 col--centered">
                     <h1><?php echo $post->post_title; ?></h1>
                     <?php echo $post->post_content; ?>
@@ -58,7 +58,7 @@ get_header();
 
     <section class="intro_beauval_nature">
         <div class="row">
-            <?php $post  = get_post(158); ?>
+            <?php $post  = get_post(608); ?>
             <div class="col col--2-of-12 col--centered logo_intro_bn">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_beauval_nature.jpg" alt="" />
             </div>
@@ -85,7 +85,7 @@ get_header();
         <h1 class="soutien">Soutenez-Nous !</h1>
 
 
-<?php $post  = get_post(161); ?>
+<?php $post  = get_post(607); ?>
         <div class="row rappel_recyclage">
             <h1><?php echo $post->post_title; ?></h1>
 
@@ -105,7 +105,7 @@ get_header();
         </div>
 
 
-<?php $post  = get_post(163); ?>
+<?php $post  = get_post(606); ?>
         <div class="row rappel_don">
             <h1><?php echo $post->post_title; ?></h1>
             <div class="col col--5-of-12 col--centered">
@@ -120,7 +120,7 @@ get_header();
         </div>
         
         
-        <?php $post  = get_post(166); ?>
+        <?php $post  = get_post(605); ?>
         <div class="row rappel_financement">
             <h1><?php echo $post->post_title; ?></h1>
             <div class="col col--5-of-12 col--centered">
@@ -134,7 +134,6 @@ get_header();
 
     <div class="js-parallax-container">
         <div class="js-parallax">
-            <!-- <img src="http://lorempicsum.com/simpsons/800/300/1" alt=""> -->
             <img src="<?php echo get_template_directory_uri(); ?>/images/orang_outan.jpg" alt="">
         </div>
         <div class="inner"></div>

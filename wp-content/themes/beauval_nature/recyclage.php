@@ -17,12 +17,6 @@ get_header();
                 <p>Le ZooParc de Beauval organise une collecte de téléphones portables usagés, destinée au recyclage du coltan, minerai contenu dans les appareils de nouvelle technologie. Un geste simple que chacun peut accomplir ! </p>
             </div>
 
-
-            <!-- <div class="barre">
-            <p><span class="icon-puce"></span>
-            </p>
-        </div> -->
-
             <div class="col col--centered">
 
                 <h1>Coltan, L'or Noir</h1>

@@ -5,7 +5,7 @@
 get_header();
 
 
-$post  = get_post(6);
+$post  = get_post(601);
 
 ?>
 
@@ -23,14 +23,14 @@ $post  = get_post(6);
         </div>
         
 
-<?php $post  = get_post(8); ?>
+<?php $post  = get_post(602); ?>
 
         <h1><?php echo $post->post_title; ?></h1>
 
         <div class="col col--6-of-12 col--centered">
             <p><?php echo $post->post_content; ?></p>
         </div>
-<?php $post = get_post(18);?>
+<?php $post = get_post(603);?>
         <h1><?php echo $post->post_title; ?></h1>
         <div class="col col--6-of-12 col--centered">
             <p><?php echo $post->post_content; ?></p>
@@ -52,7 +52,7 @@ $post  = get_post(6);
     </div>
   
   <article class="platine">
-      <?php $post = get_post(21);?>
+      <?php $post = get_post(600);?>
       
         <h1><?php echo $post->post_title; ?></h1>
 
@@ -70,7 +70,7 @@ $post  = get_post(6);
   
   <article class="liste_donateurs row">
 
-            <?php $post = get_post(33);?>
+            <?php $post = get_post(599);?>
 
       <h2><?php echo $post->post_title;?></h2>
         <div class="col col--3-of-12 or">
@@ -89,7 +89,7 @@ $post  = get_post(6);
             </p>
         </div>
 
-              <?php $post = get_post(35);?>
+              <?php $post = get_post(598);?>
 
         <h2><?php echo $post->post_title;?></h2>
         <div class="col col--3-of-12 argent">
@@ -108,7 +108,7 @@ $post  = get_post(6);
         </div>
 
         
-              <?php $post = get_post(37);?>
+              <?php $post = get_post(597);?>
 
         <h2><?php echo $post->post_title;?></h2>
         <div class="col col--3-of-12 bronze">

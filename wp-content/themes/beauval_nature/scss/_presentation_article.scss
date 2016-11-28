@@ -14,7 +14,7 @@ h1 {
 
     img {
         display: block;
-        margin: 0 auto;
+        // margin: 0 auto;
     }
 
     h2 {
@@ -24,14 +24,17 @@ h1 {
         margin-top: 50px;
     }
 
+    .more-link {
+      display: inline-block;
+    }
+
     a {
-        display: block;
         background-color: $vert;
         padding: 10px;
-        width: 150px;
-        margin-top: 20px;
+        margin: 20px;
         color: white;
         border: solid 1px $vert;
+        border-radius: 5px;
 
         &:hover {
             color: $vert;
@@ -58,46 +61,3 @@ h1 {
 
 
 // -------------------------------- Zoom Article ------------------------------------
-
-.lien {
-
-  a {
-    display: block;
-    margin: 0 auto;
-
-    text-align: center;
-  }
-
-}
-
-.js-parallax-container.article {
-    height: 250px;
-}
-
-.pagination {
-    margin-top: 100px;
-
-    ul {
-        // display: block;
-        margin: 0 auto;
-
-        li {
-            list-style: none;
-            text-align: center;
-        }
-    }
-}
-
-.prev,
-.suiv {
-    background-color: $vert;
-    padding: 15px;
-
-    a {
-        color: white;
-    }
-}
-
-.suiv {
-    right: 0;
-}
