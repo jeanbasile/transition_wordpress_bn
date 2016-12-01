@@ -29,7 +29,7 @@ add_action( 'after_setup_theme', 'zpb_action_after_setup_theme' );
  */
 function zpb_action_enqueue_scripts() {
 
-	
+
 	wp_enqueue_style(
 		'font-awesome',
 		get_template_directory_uri() . '/css/font-awesome.min.css',
@@ -45,7 +45,7 @@ function zpb_action_enqueue_scripts() {
 		'4.6.3',
 		'all'
 	);
-        
+
 	wp_enqueue_style(
 		'zooparc_actus',
 		get_template_directory_uri() . '/css/style_accueil.css',
@@ -61,14 +61,14 @@ function zpb_action_enqueue_scripts() {
 		'3.1.1',
 		true );
 	wp_enqueue_script( 'jquery' );
-        
+
         wp_register_script( 'parallax',
 		get_template_directory_uri() . '/js/parallax.js',
 		'jquery',
 		'1.0.0',
 		true );
 	wp_enqueue_script( 'parallax' );
-        
+
         wp_register_script( 'bxslider',
 		get_template_directory_uri() . '/jquery.bxslider/jquery.bxslider.min.js',
 		'jquery',
@@ -82,8 +82,8 @@ function zpb_action_enqueue_scripts() {
 		'1.0.1',
 		true );
 	wp_enqueue_script( 'app' );
-        
-        
+
+
 }
 
 add_action( 'wp_enqueue_scripts', 'zpb_action_enqueue_scripts' );
@@ -94,18 +94,18 @@ function zpb_action_register_menus() {
 		'main-menu',
 		'Menu principal'
 	);
-        
+
         register_nav_menu(
 		'footer-1',
 		'Footer 1'
 	);
-        
+
         register_nav_menu(
 		'footer-2',
 		'Footer 2'
 	);
-        
-        
+
+
 }
 
 add_action( 'after_setup_theme', 'zpb_action_register_menus' );
@@ -117,10 +117,10 @@ function register_my_post_type() {
 		'singular_name'      => 'Programme',
 		'menu_name'          => 'Programmes Conservation',
 		'name_admin_bar'     => 'Programmes',
-		'add_new'            => 'Nouveau',
+		'add_new'            => 'Ajouter',
 		'add_new_item'       => 'Nouveau programme',
 		'new_item'           => 'Nouveau programme',
-		'edit_item'          => 'Editer un programme',
+		'edit_item'          => 'Nouveau programme',
 		'view_item'          => 'Voir un programme',
 		'all_items'          => 'Tous les programmes',
 		'search_items'       => 'Chercher un programme',
@@ -136,6 +136,7 @@ function register_my_post_type() {
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
+                'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/conservation.svg',
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'programme' ),
 		'capability_type'    => 'post',
@@ -146,8 +147,8 @@ function register_my_post_type() {
 	);
 
 	register_post_type( 'programme', $args_01 );
-        
-        
+
+
         $labels_02 = array(
 		'name'               => 'Partenaires',
 		'singular_name'      => 'Partenaire',
@@ -172,6 +173,7 @@ function register_my_post_type() {
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
+                'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/partenaire.svg',
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'partenaire' ),
 		'capability_type'    => 'post',
@@ -182,9 +184,9 @@ function register_my_post_type() {
 	);
 
 	register_post_type( 'partenaire', $args_02 );
-        
-        
-        
+
+
+
         $labels_03 = array(
 		'name'               => 'Articles Page d\'Accueil',
 		'singular_name'      => 'Article Page d\'Accueil',
@@ -218,9 +220,48 @@ function register_my_post_type() {
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
 	);
 
-	register_post_type( 'Articles Page d\'Accueil', $args_03 );
-        
-        
+	register_post_type( 'articles_page_accueil', $args_03 );
+
+
+        $labels_04 = array(
+		'name'               => 'Anciens programmes',
+		'singular_name'      => 'Ancien Programme',
+		'menu_name'          => 'Anciens programmes',
+		'name_admin_bar'     => 'Ancien_programmes',
+		'add_new'            => 'Nouveau',
+		'add_new_item'       => 'Ajouter un programme',
+		'new_item'           => 'Ajouter un programme',
+		'edit_item'          => 'Editer un programme',
+		'view_item'          => 'Voir un programme',
+		'all_items'          => 'Tous les anciens programmes',
+		'search_items'       => 'Chercher un ancien programme',
+		'parent_item_colon'  => 'Programme parent',
+		'not_found'          => 'Aucun programme trouver',
+		'not_found_in_trash' => 'Aucun programme trouver dans la corbeille'
+	);
+
+	$args_04 = array(
+		'labels'             => $labels_04,
+                'description'        => "Les anciens programmes de conservation Beauval Nature",
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'anciens_programmes' ),
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
+	);
+
+	register_post_type( 'anciens_programmes', $args_04 );
+
+
+
+
+
 }
 
 add_action( 'init', 'register_my_post_type' );

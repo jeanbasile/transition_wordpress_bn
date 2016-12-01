@@ -26,7 +26,7 @@ get_header();
         
         
         <div class="lien">
-            <a href="actualite.html">Revenir à la Page Conservation</a>
+            <a href="http://localhost:7000/beauval_nature/conservation/">Revenir à la Page Conservation</a>
         </div>
 
     </section>

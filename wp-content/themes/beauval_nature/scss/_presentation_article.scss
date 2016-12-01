@@ -4,17 +4,19 @@ h1 {
     text-align: center;
 }
 
+.archive {
+
+}
+
 .contenu {
     color: $brun;
 
-    p {
-        margin-top: 0px;
-        text-align: justify;
+    .lien_liste_actu {
+            text-align: center;
     }
 
     img {
         display: block;
-        // margin: 0 auto;
     }
 
     h2 {
@@ -61,3 +63,22 @@ h1 {
 
 
 // -------------------------------- Zoom Article ------------------------------------
+
+
+// ---------------------------------- Lien -----------------------------------------
+.lien a {
+    display: block;
+    background-color: $rouge;
+    padding: 10px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: white;
+    border: solid 1px $rouge;
+
+    &:hover {
+        color: $brun;
+        background: white;
+        transition: 0.4s;
+    }
+}

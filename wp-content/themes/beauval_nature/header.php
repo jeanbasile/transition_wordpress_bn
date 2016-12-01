@@ -29,19 +29,6 @@
 			'container'  => '',
 		] ); ?>
 
-               <!-- <ul class="top_menu" id="top_menu">
-                    <li><button id="close-menu"><i class="fa fa-times" aria-hidden="true"></i></button></li>
-                    
-                    
-                    
-                    <li class="hidden_li"><a href="http://localhost:7000/beauval_nature/"><span class="icon-logo_bn"></span> Accueil</a></li>
-                    <li><a href="http://localhost:7000/beauval_nature/association/" class="asso"><span class="icon-logo_asso"></span> L'association</a></li>
-                    <li><a href="http://localhost:7000/beauval_nature/actualite/" class="news"><span class="icon-actu"></span> Actualité</a></li>
-                    <li><a href="http://localhost:7000/beauval_nature/conservation/" class="conservation"><span class="icon-conservation"></span> Conservation</a></li>
-                    <li><a href="http://localhost:7000/beauval_nature/recherche/" class="recherche"><span class="icon-recherche"></span> Recherche</a></li>
-                    <li><a href="http://localhost:7000/beauval_nature/partenaires/" class="partenaire"><span class="icon-partenaire"></span> Devenez Partenaire</a></li>
-                </ul> -->
-            </nav>
         </div>
 
     </header>

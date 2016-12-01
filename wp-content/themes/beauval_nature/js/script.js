@@ -1,19 +1,5 @@
 // Menu mobile
 $(document).ready(function() {
-//     var topMenu = $("#top_menu");
-//         $("#show-menu").on('click', function(evt) {
-//             evt.preventDefault();
-//
-//             topMenu.toggleClass('open');
-//
-//         });
-//         $("#close-menu").on('click', function(evt) {
-//             evt.preventDefault();
-//
-//             topMenu.removeClass('open');
-//
-//         });
-
 
     var topMenu = $("#menu-header");
         $("#show-menu").on('click', function(evt) {
@@ -31,28 +17,26 @@ $(document).ready(function() {
 
 
 
-
-
     // ----------------------------- bouton haut de page ------------------------
 
 
 
     var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > 100) {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
             // Si un défillement de 100 pixels ou plus.
             // Ajoute le bouton
-            jQuery('.scroll_button').fadeIn(duration);
+            $('.scroll_button').fadeIn(duration);
         } else {
             // Sinon enlève le bouton
-            jQuery('.scroll_button').fadeOut(duration);
+            $('.scroll_button').fadeOut(duration);
         }
     });
 
-    jQuery('#up').click(function(event) {
+    $('.fleche').click(function(event) {
         // Un clic provoque le retour en haut animé.
         event.preventDefault();
-        jQuery('html, body').animate({
+        $('html, body').animate({
             scrollTop: 0
         }, duration);
         return false;
@@ -124,6 +108,6 @@ tabBtns.on('click', function(evt) {
 
 
 
-
-
 });
+
+

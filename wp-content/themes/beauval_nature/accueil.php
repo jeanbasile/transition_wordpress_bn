@@ -48,12 +48,10 @@ get_header();
             </div>
         </div>
 
-        <div class="js-parallax-container">
-            <div class="js-parallax">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lamantin.jpg" alt="">
-            </div>
-            <div class="inner"></div>
-        </div>
+        <div class="barre">
+        <p><span class="icon-puce"></span>
+        </p>
+    </div>
     </section>
 
     <section class="intro_beauval_nature">
@@ -70,12 +68,22 @@ get_header();
             </div>
 
         </div>
+        
+        
     </section>
 
     <div class="barre">
         <p><span class="icon-puce"></span>
         </p>
     </div>
+
+
+        <div class="js-parallax-container">
+            <div class="js-parallax">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/lamantin.jpg" alt="">
+            </div>
+            <div class="inner"></div>
+        </div>
 
     <!--  _______________________________________________   Nous Soutenir   ______________________________________  -->
 

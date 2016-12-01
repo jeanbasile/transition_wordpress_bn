@@ -10,16 +10,19 @@ get_header();
     <div class="col col--3-of-12"></div>
     <div class="col col--6-of-12">
 
-<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
-    
-<?php endwhile; endif; ?>
-
-<?php the_content(); ?>
+      <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+          <?php the_content('Lire la suite');?>
+        <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+      <?php else: ?>
+      <?php _e('No content found', 'wpc'); ?>
+      <?php endif; ?>
 
         </div>
     <div class="col col--3-of-12"></div>
  </div>
-        
+
 <?php
 
 
