@@ -216,11 +216,8 @@ header img {
     text-align: center;
 
     p {
-        display: block;
-        text-align: center;
 
         span {
-            display: inline-block;
             margin-right: -0.25em;
         }
 
@@ -233,7 +230,6 @@ header img {
             margin: 0 auto;
             background-color: $brun;
             margin-top: -4px;
-            // margin-right: -0.25em;
         }
     }
 }

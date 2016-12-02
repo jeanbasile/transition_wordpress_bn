@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: anciens_programmes
+ * Template Name: eaza
  */
 get_header();
 ?>
@@ -10,9 +10,9 @@ get_header();
 <div class="intro">
 
 
-    <h2>Les anciens programmes de Conservation</h2>
+    <h2>Les évènements de L'association européenne des zoos et aquariums</h2>
 
-    <p>Les anciens programmes sont d'anciens partenariats de protection des espèces animales qui ont été menées à leur terme.</p>
+    <p>Voici la liste des Evènements organisés sur le parc avec L'association européenne des zoos et aquariums</p>
 </div>
 
     <div class="barre">
@@ -34,15 +34,9 @@ get_header();
     </div>
 
 
-    <div class="barre">
-        <p><span class="icon-puce"></span>
-        </p>
-    </div>
 
 
-    <div class="lien">
-        <a href="http://localhost:7000/beauval_nature/conservation/">Revenir à la Page Conservation</a>
-    </div>
+
 
 </section>
 

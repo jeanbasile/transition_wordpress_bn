@@ -136,7 +136,7 @@ function register_my_post_type() {
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
-                'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/conservation.svg',
+    'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/conservation.svg',
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'programme' ),
 		'capability_type'    => 'post',
@@ -173,7 +173,7 @@ function register_my_post_type() {
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
-                'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/partenaire.svg',
+    'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/partenaire.svg',
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'partenaire' ),
 		'capability_type'    => 'post',
@@ -188,9 +188,9 @@ function register_my_post_type() {
 
 
         $labels_03 = array(
-		'name'               => 'Articles Page d\'Accueil',
-		'singular_name'      => 'Article Page d\'Accueil',
-		'menu_name'          => 'Articles Page d\'Accueil',
+		'name'               => 'Contenu Accueil',
+		'singular_name'      => 'Contenu Accueil',
+		'menu_name'          => 'Contenu Accueil',
 		'name_admin_bar'     => 'Accueil',
 		'add_new'            => 'Nouveau',
 		'add_new_item'       => 'Nouvel article de la page d\'accueil',
@@ -206,13 +206,14 @@ function register_my_post_type() {
 
 	$args_03 = array(
 		'labels'             => $labels_03,
-                'description'        => "Les articles qui figurent en page d'acceuil",
+    'description'        => "Les articles qui figurent en page d'acceuil",
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
+		'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/logo_asso.svg',
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'recyclage' ),
+		'rewrite'            => array( 'slug' => 'articlespagedaccueil' ),
 		'capability_type'    => 'post',
 		'has_archive'        => false,
 		'hierarchical'       => false,
@@ -220,7 +221,7 @@ function register_my_post_type() {
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
 	);
 
-	register_post_type( 'articles_page_accueil', $args_03 );
+	register_post_type( 'articlespagedaccueil', $args_03 );
 
 
         $labels_04 = array(
@@ -242,15 +243,16 @@ function register_my_post_type() {
 
 	$args_04 = array(
 		'labels'             => $labels_04,
-                'description'        => "Les anciens programmes de conservation Beauval Nature",
+    'description'        => "Les anciens programmes de conservation Beauval Nature",
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
+    'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/conservation.svg',
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'anciens_programmes' ),
 		'capability_type'    => 'post',
-		'has_archive'        => false,
+		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
@@ -259,7 +261,41 @@ function register_my_post_type() {
 	register_post_type( 'anciens_programmes', $args_04 );
 
 
+	$labels_05 = array(
+	'name'               => 'EAZA',
+	'singular_name'      => 'EAZA',
+	'menu_name'          => 'EAZA',
+	'name_admin_bar'     => 'EAZA',
+	'add_new'            => 'Nouveau',
+	'add_new_item'       => 'Ajouter un programme EAZA',
+	'new_item'           => 'Ajouter un programme EAZA',
+	'edit_item'          => 'Editer un programme EAZA',
+	'view_item'          => 'Voir un programme EAZA',
+	'all_items'          => 'Tous les anciens programmes EAZA',
+	'search_items'       => 'Chercher un ancien programme EAZA',
+	'parent_item_colon'  => 'Programme parent',
+	'not_found'          => 'Aucun programme EAZA trouver',
+	'not_found_in_trash' => 'Aucun programme EAZA trouver dans la corbeille'
+	);
 
+	$args_05 = array(
+	'labels'             => $labels_05,
+	'description'        => "Les Programmes EAZA",
+	'public'             => true,
+	'publicly_queryable' => true,
+	'show_ui'            => true,
+	'show_in_menu'       => true,
+	'menu_icon'          => get_bloginfo('template_directory').'/images/pictogrammes/logo_eaza.png',
+	'query_var'          => true,
+	'rewrite'            => array( 'slug' => 'eaza' ),
+	'capability_type'    => 'post',
+	'has_archive'        => true,
+	'hierarchical'       => false,
+	'menu_position'      => null,
+	'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
+	);
+
+	register_post_type( 'eaza', $args_05 );
 
 
 }

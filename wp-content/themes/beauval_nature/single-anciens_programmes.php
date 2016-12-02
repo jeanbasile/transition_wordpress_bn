@@ -1,10 +1,8 @@
 <?php
-/**
- * The main template file
-*/
 
 get_header();
 ?>
+
 
 <div class="contenu row">
     <div class="col col--3-of-12"></div>
@@ -22,9 +20,6 @@ get_header();
     <div class="col col--3-of-12"></div>
  </div>
 
-
 <?php
-
-
 get_footer();
 ?>

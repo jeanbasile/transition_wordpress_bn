@@ -10,6 +10,7 @@ h1 {
 
 .contenu {
     color: $brun;
+    margin-bottom: 100px;
 
     .lien_liste_actu {
             text-align: center;
@@ -58,6 +59,16 @@ h1 {
         img {
             width: 85%;
         }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contenu {
+        a,
+        p {
+            margin: 40px;
+        }
+
     }
 }
 
