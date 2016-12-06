@@ -79,6 +79,15 @@ h2 {
 
 // -------------------------- Gestion Slider ------------------------
 
+.slider {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+text-align: center; }
+}
+
 span.inner {
     position: absolute;
     height: 100%;
@@ -102,8 +111,15 @@ span.inner {
 
     h2 {
         color: white;
-        font-size: 25px;
+        font-size: 50px;
         text-align: left;
+    }
+
+    @media (max-width: $mobile_size) {
+      h2 {
+        font-size: 25px;
+      }
+
     }
 
     p {
@@ -121,7 +137,7 @@ span.inner {
 
         &:hover {
             background-color: white;
-            color: $vert;
+            color: $rouge;
             transition: 0.4s;
         }
     }
@@ -137,9 +153,9 @@ span.inner {
     .rappel_don,
     .rappel_financement,
     .rappel_recyclage, .association, {
-        div p {
-            margin-left: 50px;
-            margin-right: 50px;
+        div {
+            padding-left: 50px;
+            padding-right: 50px;
         }
     }
 }

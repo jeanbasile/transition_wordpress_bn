@@ -4,7 +4,6 @@ get_header();
 ?>
 
 
-COUCOU
 archive-custom
 
 <?php

@@ -281,8 +281,6 @@ get_header();
         </svg>
     </div>
 
-    <?php echo wp_count_posts('page')->publish; ?>
-
     <div class="row my-tab-btns ">
         <ul class="row continents">
             <li class="col col--2-of-16"></li>

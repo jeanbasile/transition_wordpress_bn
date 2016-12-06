@@ -19,7 +19,7 @@ get_header();?>
 
         ?>
 
-        <?php foreach($myposts as $post) : ?>	
+        <?php foreach($myposts as $post) : ?>
 
                 <?php
 
@@ -51,9 +51,9 @@ get_header();?>
 
         <?php endforeach; ?>
                 </ul>
-    
+
         </div>
     <div class="col col--4-of-12"></div>
 </div>
-                
+
 <?php get_footer(); ?>

@@ -5,8 +5,7 @@
 get_header();
 ?>
 
-
-<section class="animaux">
+<div class="contenu">
 <div class="intro">
 
 
@@ -15,30 +14,36 @@ get_header();
     <p>Voici la liste des Evènements organisés sur le parc avec L'association européenne des zoos et aquariums</p>
 </div>
 
-    <div class="barre">
-        <p><span class="icon-puce"></span>
-        </p>
-    </div>
+<div class="barre col col--12-of-12">
+    <p><span class="icon-puce"></span>
+    </p>
+</div>
 
-    <div class="contenu">
-                 <?php  $loop = new WP_Query( array( 'post_type' => 'anciens_programmes', 'posts_per_page' => 10 ) );
-                    while ( $loop->have_posts() ) : $loop->the_post();?>
+<div class="contenu row">
+    <div class="col col--2-of-12"></div>
+    <div class="col col--8-of-12">
+             <?php  $loop = new WP_Query( array( 'post_type' => 'eaza', 'posts_per_page' => 10 ) );
+                while ( $loop->have_posts() ) : $loop->the_post();?>
 
-                      <h3><?php  the_title();?></h3>
+                  <h2><?php  the_title();?></h2>
 
-                      <?php  echo '<div>';
-                      the_content('Lire la suite');
-                      echo '</div>';
-                    endwhile;?>
+                  <?php  echo '<div>';
+                  the_content('Lire la suite');
+                  echo '</div>';
+                endwhile;?>
 
-    </div>
-
-
-
-
+              </div>
+          <div class="col col--2-of-12"></div>
+       </div>
 
 
-</section>
+
+
+
+
+
+
+</div>
 
 
 <?php get_footer();?>

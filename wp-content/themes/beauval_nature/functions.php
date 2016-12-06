@@ -38,13 +38,7 @@ function zpb_action_enqueue_scripts() {
 		'all'
 	);
 
-        wp_enqueue_style(
-		'bxslider',
-		get_template_directory_uri() . '/jquery.bxslider/jquery.bxslider.css',
-		null,
-		'4.6.3',
-		'all'
-	);
+
 
 	wp_enqueue_style(
 		'zooparc_actus',
@@ -69,12 +63,7 @@ function zpb_action_enqueue_scripts() {
 		true );
 	wp_enqueue_script( 'parallax' );
 
-        wp_register_script( 'bxslider',
-		get_template_directory_uri() . '/jquery.bxslider/jquery.bxslider.min.js',
-		'jquery',
-		'1.0.0',
-		true );
-	wp_enqueue_script( 'bxslider' );
+
 
 	wp_register_script( 'app',
 		get_template_directory_uri() . '/js/script.js',
@@ -142,7 +131,7 @@ function register_my_post_type() {
 		'capability_type'    => 'post',
 		'has_archive'        => false,
 		'hierarchical'       => false,
-		'menu_position'      => null,
+		'menu_position'      => 27,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
 	);
 
@@ -179,7 +168,7 @@ function register_my_post_type() {
 		'capability_type'    => 'post',
 		'has_archive'        => false,
 		'hierarchical'       => false,
-		'menu_position'      => null,
+		'menu_position'      => 25,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
 	);
 
@@ -217,7 +206,7 @@ function register_my_post_type() {
 		'capability_type'    => 'post',
 		'has_archive'        => false,
 		'hierarchical'       => false,
-		'menu_position'      => null,
+		'menu_position'      => 29,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
 	);
 
@@ -254,7 +243,7 @@ function register_my_post_type() {
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
-		'menu_position'      => null,
+		'menu_position'      => 26,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
 	);
 
@@ -289,9 +278,9 @@ function register_my_post_type() {
 	'query_var'          => true,
 	'rewrite'            => array( 'slug' => 'eaza' ),
 	'capability_type'    => 'post',
-	'has_archive'        => true,
+	'has_archive'        => false,
 	'hierarchical'       => false,
-	'menu_position'      => null,
+	'menu_position'      => 28,
 	'supports'           => array( 'title', 'editor', 'author', 'thumbnail')
 	);
 

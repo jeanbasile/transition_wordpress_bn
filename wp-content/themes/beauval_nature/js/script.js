@@ -45,7 +45,6 @@ $(document).ready(function() {
 
 
     $('.js-parallax').parallax();
-    $('.bxslider').bxSlider();
 
 
 // --------------------------------- Boutons Map ---------------------
@@ -109,5 +108,3 @@ tabBtns.on('click', function(evt) {
 
 
 });
-
-

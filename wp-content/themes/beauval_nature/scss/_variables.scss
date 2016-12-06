@@ -10,7 +10,9 @@ $titre: "Bebas Neue";
   src: url('../fonts/bebas_neue/BebasNeue Regular.ttf');
 }
 
-
+.contenu .separation {
+  margin-bottom: 100px;
+}
 
 
 @mixin clearfix() {
@@ -35,6 +37,7 @@ $titre: "Bebas Neue";
     display: block;
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 

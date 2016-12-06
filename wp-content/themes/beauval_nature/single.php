@@ -4,8 +4,7 @@ get_header();
 ?>
 
 
-
-<div class="contenu row">
+<div class="contenu zoom row">
     <div class="col col--2-of-12"></div>
     <div class="col col--8-of-12">
 

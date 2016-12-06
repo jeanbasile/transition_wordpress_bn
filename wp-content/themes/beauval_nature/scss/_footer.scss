@@ -7,6 +7,10 @@
     margin-top: 50px;
     padding-bottom: 20px;
 
+.barre:before {
+  color:white;
+}
+
     .lien_donation {
         margin-top: 30px;
         padding-top: 50px;
@@ -32,8 +36,6 @@
         padding-top: 70px;
         background: #FFF;
 
-
-
         .socials {
             text-align: center;
             font-size: 80px;
@@ -45,6 +47,7 @@
     }
 
     .liens_utiles {
+
         h2 {
             color: white;
             font-family: $titre;
@@ -69,30 +72,21 @@
             transition: 0.3s;
         }
 
-
-
         a:hover h2 {
             color: $brun-clair;
             transition: 0.3s;
         }
-
-
-
     }
-
 }
-
-
 
 .menu_mentions_legales {
     background: #666666;
 
-
     ul {
         max-width: 1200px;
         margin: 0 auto;
-
         @include clearfix();
+
         li {
             float: left;
             width: percentage(1/3);
@@ -108,24 +102,22 @@
 
             a {
                 color: white;
-
             }
 
             &:last-of-type {
                 cursor: default;
+
                 a {
                     cursor: default;
                 }
+
                 &:hover {
                     background: #666;
                 }
             }
         }
-
     }
-
 }
-
 // ------------------- Retour en haut de page ------------------------
 .scroll_button {
     position: fixed;
@@ -133,7 +125,6 @@
     right: 5%;
     z-index: 100;
     cursor: pointer;
-
 
     .fleche {
         $hauteur_button: 66px;
@@ -162,8 +153,14 @@
 }
 // --------------------- responsive -------------------------
 @media (max-width: $mobile_size) {
-    .liens_utiles div {
-        text-align: center;
+    .liens_utiles {
+        div {
+            text-align: center;
+        }
+    }
+
+    .main-footer .liens_utiles h2 {
+      text-align: center;
     }
 }
 @media (min-width: $mobile_size) {
