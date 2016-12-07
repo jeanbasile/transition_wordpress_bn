@@ -39,8 +39,8 @@
         </div>
 
 
-        <div class="col col--4-of-12"></div>
-            <div class="col col--1-of-12">
+        <div class="col col--3-of-12"></div>
+            <div class="col col--2-of-12 logo_beauval">
 
             <a href="https://www.zoobeauval.com/"> <img src="<?php echo get_template_directory_uri(); ?>/images/logos/logo_zoo.png" alt="" class="logo_parc" /> </a>
         </div>

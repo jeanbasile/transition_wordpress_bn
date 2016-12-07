@@ -3,6 +3,10 @@
 
 header {
   box-shadow: 0px 3px 3px 0px #EFEFEF;
+
+  .row .col:first-of-type {
+    vertical-align: middle;
+  }
 }
 
 .menu_principale {

@@ -7,9 +7,7 @@
     margin-top: 50px;
     padding-bottom: 20px;
 
-.barre:before {
-  color:white;
-}
+
 
     .lien_donation {
         margin-top: 30px;
@@ -47,6 +45,12 @@
     }
 
     .liens_utiles {
+
+      .logo_beauval {
+        img {
+          max-width: 135px;
+        }
+      }
 
         h2 {
             color: white;
@@ -154,9 +158,10 @@
 // --------------------- responsive -------------------------
 @media (max-width: $mobile_size) {
     .liens_utiles {
-        div {
+        div,  {
             text-align: center;
         }
+
     }
 
     .main-footer .liens_utiles h2 {
@@ -167,5 +172,8 @@
     .logo_parc {
         width: 100%;
         height: auto;
+    }
+    .logo_beauval {
+      text-align: right;
     }
 }
