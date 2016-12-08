@@ -3,6 +3,7 @@
 get_header();
 ?>
 
+SINGLE
 
 <div class="contenu zoom row">
     <div class="col col--2-of-12"></div>

@@ -91,7 +91,7 @@ get_header();
 
             <div class="col col--4-of-12 col--centered">
                 <?php echo $post->post_content; ?>
-                <a href="recyclage.html">En Savoir Plus</a>
+                <a href="http://localhost:7000/beauval_nature/recyclage/">En Savoir Plus</a>
             </div>
         </div>
 

@@ -36,12 +36,16 @@ get_header();
                 voit détruit. L'homme s'avance toujours plus dans ces territoires, facilitant l'accès des braconniers aux populations de primates. De nombreuses personnes à la recherche de travail affluent vers ces mines et chassent les animaux pour leur
                 viande, dont ils se nourrissent. Les jeunes orphelins sont capturés pour être vendus comme animaux de compagnie. Souvent mal soignés, ils périssent de malnutrition, de maladie ou de dépression.</p>
 
+</section>
 
 
-            <div class="col col--centered barre">
+
+            <div class="barre">
                 <p><span class="icon-puce"></span>
                 </p>
             </div>
+
+<section class="recyclage row">
 
             <div class="col col--centered">
                 <h1 style="text-align:center;">
@@ -60,13 +64,14 @@ get_header();
                 </p>
             </div>
 
+    </section>
 
-            <div class="col col--12-of-12 col--centered barre">
+            <div class="barre">
                 <p><span class="icon-puce"></span>
                 </p>
             </div>
 
-
+<section class="recyclage row">
 
             <div class="col col--5-of-12 col--centered">
               <h1>Remerciements</h1>
